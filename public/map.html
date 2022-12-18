@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"
+        integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ=="
+        crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"
+        integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
+        crossorigin=""></script>
+    <style>
+        #map {
+            height: 80vh;
+            width: 100vw;
+            /* position: absolute; */
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="row no-gutters">
+        <div class="col-md-6" id="map">
+
+        </div>
+        <div class="col-md-6" >
+            <form class="needs-validation d-flex justify-content-center align-items-center" action="">
+                <div class="form-col"  style="border: 5px solid black;">
+                    <div class="form-group">
+                        <label for="range">Choose your range:</label>
+                        <select name="range" id="range">
+                            <option value="">--------Select your range--------</option>
+                            <option value="1km">1km</option>
+                            <option value="5km">5km</option>
+                            <option value="10km">10km</option>
+                        </select>
+                    </div>
+                    <div id="btn2">
+                        <button class="btn">Submit</button>
+                    </div>
+                </div>
+            </form> 
+        </div>
+    </div>
+
+
+                        <!-- <form class="needs-validation d-flex justify-content-center align-items-center" action="">
+                            <div class="form-col">
+                                <div class="form-group">
+                                    <label for="range">Choose your range:</label>
+                                    <select name="range" id="range">
+                                        <option value="">--------Select your range--------</option>
+                                        <option value="1km">1km</option>
+                                        <option value="5km">5km</option>
+                                        <option value="10km">10km</option>
+                                    </select>
+                                </div>
+                                <div id="btn2">
+                                    <button class="btn">Submit</button>
+                                </div>
+                            </div>
+                        </form> -->
+        <script src="./js/map.js"></script>
+
+</body>
+
+</html>

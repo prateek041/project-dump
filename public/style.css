@@ -1,0 +1,201 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Aboreto&display=swap");
+/* --cadet-blue-crayola: #A9B5C9ff;
+--jet: #342F2Dff;
+--paradise-pink: #DA425Bff;
+--bisque: #F2D6B5ff;
+--smoky-black: #0D0A08ff;
+--chocolate-web: #DE7935ff; */
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.navbar {
+  z-index: 1000;
+}
+
+.navbar .navbar-brand {
+  font-weight: 500;
+}
+
+#navabarSupportedContent > ul > li:nth-child(n) > a {
+  font-size: 1rem;
+  padding: 0 5rem;
+}
+
+#navbarSupportedContent > ul > li:nth-child(n) > a:hover {
+  color: yellow;
+}
+
+#navbarSupportedContent > button {
+  background: yellow;
+  font-weight: 600;
+  padding: 0.4rem 1.4rem;
+  color: black;
+  border: none;
+}
+
+#img {
+  border-radius: 10%;
+  height: 70px;
+  width: 90px;
+}
+
+#button {
+  background-color: #f2d6b5;
+}
+
+/*------------division-------------*/
+
+.leftside,
+.rightside {
+  height: 100vh;
+  width: 100%;
+}
+
+.leftside a {
+  color: white;
+  text-decoration: none;
+}
+
+/* #side1 a:l{
+    display: inline;
+    height: 100px;
+    width: 100px;
+    background: url("assets/hand\ with\ donation.png"); 
+} */
+
+.side1 {
+  background-image: url("assets/society.jpg");
+  background-repeat: none;
+  /* background-attachment: fixed;  */
+  background-size: cover;
+  background-position: cover;
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+  -webkit-transition: all 1s ease;
+}
+
+.side1:hover {
+  filter: grayscale(0%);
+  filter: grayscale(0%);
+  filter: gray;
+  -webkit-filter: grayscale(0%);
+  filter: none;
+  transition: 1s ease;
+}
+
+.side2 {
+  background-image: url("assets/industry.jpg");
+  background-repeat: none;
+  /* background-attachment: fixed;  */
+  background-size: cover;
+  background-position: center;
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+  -webkit-transition: all 1s ease;
+}
+
+.side2:hover {
+  filter: grayscale(0%);
+  filter: grayscale(0%);
+  filter: gray;
+  -webkit-filter: grayscale(0%);
+  filter: none;
+  transition: 1s ease;
+}
+
+.link h1 {
+  font-weight: 700;
+  font-size: 3rem;
+}
+
+.link p {
+  font-weight: 200;
+}
+
+#more {
+  display: none;
+  color: black;
+}
+#more1 {
+  display: none;
+  color: black;
+}
+
+.link h1 {
+  color: white;
+  text-decoration: none;
+}
+
+h1:hover {
+  color: white;
+  text-decoration: none;
+}
+
+.link p {
+  color: white;
+  text-decoration: none;
+}
+
+p:hover {
+  color: white;
+  text-decoration: none;
+}
+
+#myBtn {
+  color: white;
+  background-color: red;
+}
+
+#myBtn:hover {
+  text-decoration: none;
+}
+
+#myBtn1 {
+  color: white;
+  background-color: red;
+}
+
+#myBtn1:hover {
+  text-decoration: none;
+}
+
+@media screen and (min-width: 768px) {
+  .leftside,
+  .rightside {
+    height: 100vh;
+  }
+}
+
+/*-------footer---------*/
+
+span {
+  color: white;
+  font-size: larger;
+}
+
+.link a {
+  color: white;
+  text-decoration: none;
+}
+
+.link a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+.link {
+  color: white;
+  text-decoration: none;
+}

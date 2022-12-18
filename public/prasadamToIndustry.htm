@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prasadam</title>
+    <link rel="stylesheet" href="prasadamToIndustry.css">
+    <link rel="icon" href="assets/LOGO PRASADAM FINAL.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.2.1/dist/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+    <link rel="stylesheet" href="node_modules/mdbootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/mdbootstrap/css/mdb.min.css">
+    <link rel="stylesheet" href="node_modules/mdbootstrap/css/style.css">
+    <script src="https://kit.fontawesome.com/658aa27f14.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+
+    <!----------header--------------------->
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #0000ff;">
+
+            <button class=" my-auto navbar-toggler" type="button" data-toggle="collapse"
+                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="mx-auto navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item p-3">
+                        <a class="nav-link text-white" href="whoWeAre.htm">Who we are</a>
+                    </li>
+                    <li class="nav-item p-3">
+                        <a class="nav-link text-white" href="whatWeDo.htm">What we do</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="navbar-brand" href="index.htm">
+                            <img id="img" src="assets/LOGO PRASADAM FINAL.png" alt="">
+                        </a>
+                    </li>
+                    <li class="nav-item p-3">
+                        <a class="nav-link text-white" href="gallery.htm">Gallery</a>
+                    </li>
+                    <li class="nav-item p-3">
+                        <a class="nav-link text-white" href="contactUs.htm">Contact us</a>
+                    </li>
+                </ul>
+                <a class="btn" data-toggle="modal" data-target="#acceptorModal" href="#" id="button">LOGIN</a>
+            </div>
+        </nav>
+
+        <!----------login pop-up-------------->
+
+        <section class="login-pop-up">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="modal fade" id="acceptorModal">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+                                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                                <ul class="navbar-nav mx-auto">
+                                                    <li class="nav-item p-3">
+                                                        <a class="navbar-brand" href="#">
+                                                            <img id="img" src="assets/LOGO PRASADAM FINAL.png" alt="">
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </nav>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form class="needs-validation my-5 py-5" novalidate>
+                                            <div class="form-col">
+                                                <div class="form-group">
+                                                    <label for="validationCustomEmail">Email :</label>
+                                                    <input type="email" class="form-control" id="validationCustomEmail" placeholder="Email" required>
+                                                    <div class="invalid-feedback">
+                                                        Please provide a valid e-mail.
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="validationCustomPassword">Password</label>
+                                                    <input type="password" class="form-control" id="validationCustomPassword" placeholder="Password">
+                                                </div>
+                                            </div>
+                                            <button class="btn btn-primary" type="submit">Submit</button>
+                                            <div class="form-group text-center text-white">
+                                                <a href="#" id="link1" data-toggle="modal" data-target="#donorModal" class="text-center">Didn't registered yet ? Signup here!</a>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer bg-dark">
+                                        <footer class="container text-center text-md-left mt-5">
+                                            <div class="footer-copyright text-center py-3">
+                                                <p class="link">&copy; Copyright</p>
+                                                <a class="link" href="#">Prasadam@gmail.com</a>
+                                                <p class="link">Designed by TECHNOVATORS</p>
+                                            </div>
+                                        </footer>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+
+        <!----------signup pop-up--------------------->
+
+        <section class="sign-up-pop-up">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="modal fade" id="donorModal">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+                                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                                <ul class="navbar-nav mx-auto">
+                                                    <li class="nav-item p-3">
+                                                        <a class="navbar-brand" href="#">
+                                                            <img id="img" src="assets/LOGO PRASADAM FINAL.png" alt="">
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </nav>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form class="needs-validation my-5 py-5" novalidate>
+                                            <div class="form-col">
+                                                <div class="form-group">
+                                                    <label for="validationCustom01">Name :</label>
+                                                    <input type="text" class="form-control" id="validationCustom01" placeholder="Full name" required>
+                                                    <div class="valid-feedback">
+                                                        Looks good!
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="validationCustomEmail">Email :</label>
+                                                    <input type="email" class="form-control" id="validationCustomEmail" placeholder="Email" required>
+                                                    <div class="invalid-feedback">
+                                                        Please provide a valid e-mail.
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="validationCustomPassword">Password</label>
+                                                    <input type="password" class="form-control" id="validationCustomPassword" placeholder="Password">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="validationCustomNumber">Contact Number :</label>
+                                                    <input type="tel" class="form-control" id="validationCustomNumber" placeholder="Contact Number" required>
+                                                    <div class="invalid-feedback">
+                                                        Please provide a valid contact details.
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="validationCustomAddress">Address</label>
+                                                    <input type="text" class="form-control" id="validationCustomAddress" placeholder="1234 Main St">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="cars">Choose your domainn:</label>
+                                                    <select name="cars" id="cars">
+                                                        <option value="">--------Select your domain of waste----------</option>
+                                                        <option value="Seed & Gardening Supplies">Seed & Gardening Supplies</option>
+                                                        <option value="Flowers & Plant Supplies">Flowers & Plant Supplies</option>
+                                                        <option value="Texttile and other Fiber">Texttile and other Fiber</option>
+                                                        <option value="Craft items made from organic materials">Craft items made from organic materials</option>
+                                                        <option value="Bodycare and Cosmetics">Bodycare and Cosmetics</option>
+                                                        <option value="Food Waste">Food Waste</option>
+                                                        <option value="Bevarages">Bevarages</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <button class="btn btn-primary" type="submit">Submit</button>
+                                            <!-- <div class="form-group text-center text-white">
+                                                <a href="" data-toggle="modal" data-target="#acceptorModal" class="text-center">Already signed up ? Login Here!</a>
+                                            </div> -->
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer bg-dark">
+                                        <footer class="container text-center text-md-left mt-5">
+                                            <div class="footer-copyright text-center py-3">
+                                                <p class="link">&copy; Copyright</p>
+                                                <a class="link" href="#">Prasadam@gmail.com</a>
+                                                <p class="link">Designed by TECHNOVATORS</p>
+                                            </div>
+                                        </footer>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    <!--------------stick men-------------->
+
+    <section class="stick-men my-5 py-5">
+        <div class="jumbotron jumbotron-fluid" style="background-color: white;">
+            <div class="row container my-auto mx-auto">
+                <div class="img p-2 col-lg-6 col-md-12 col-12 my-auto">
+                    <img src="assets/handshake.png" alt="" data-aos="fade-right" data-aos-offset="200" data-aos-duration="500"
+                    data-aos-easing="ease-in-out">
+                </div>
+                <div class="text p-3 col-lg-6 col-md-12 col-12 w-50">
+                    <h1 class="display-4" data-aos="fade-down" data-aos-offset="200" data-aos-duration="800"
+                    data-aos-easing="ease-in-out" style="color: #da425b;"><span style="font-size: 3rem; color: #da425b;">"Recycle</span> &nbsp; each and every day, instead of throwing garbage away."</h1>
+                    <p class="lead py-3" data-aos="fade-left" data-aos-offset="200" data-aos-duration="500"
+                    data-aos-easing="ease-in-out" style="color: #342f2d;">We at Prasadam contact to various industries which generate organic waste as their bi-product which is not managed and dumped properly.  <br><br> We take those organic waste and  manage it properly by providing it to the consumer and managing the organic waste.</p>
+                </div>
+            </div>
+        </div>
+        <div class="jumbotron jumbotron-fluid" style="background-color: #b2b2ff;">
+            <div class="row container my-auto mx-auto">
+                <div class="text p-3 col-lg-6 col-md-12 col-12 w-50">
+                    <h1 class="display-4" data-aos="fade-down" data-aos-offset="200" data-aos-duration="800"
+                    data-aos-easing="ease-in-out" style="color: #dc5e48;">"Recycle it all, no matter how <span style="font-size: 3rem; color: #dc5e48;">small"</span></h1>
+                    <p class="lead" data-aos="fade-right" data-aos-offset="200" data-aos-duration="500"
+                    data-aos-easing="ease-in-out" style="color: #342f2d;">Prasadam targets all the industry which generates organic waste.  <br><br> This generated organic waste can be accepted by various domains of industry "compost, fertilizers, soap and dyes industry, cosmetics and bodycare, craft items, and food with bevarages."</p>
+                </div>
+                <div class="img p-2 col-lg-6 col-md-12 col-12 my-auto">
+                    <img src="assets/singlr industry.png" alt="" alt="" data-aos="fade-left" data-aos-offset="200" data-aos-duration="500"
+                    data-aos-easing="ease-in-out">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--------------Partners------------>
+
+    <section class="testimonial">
+        <div class="container">
+            <h1>Our Partners</h1>
+        </div>
+        <div class="row">
+            <div class="col-md-4 text-center">
+                <div class="profile">
+                    <img src="assets/301171924_369219382072654_1132484087588486684_n.jpeg" class="user" alt="">
+                    <h3 class="text-center">
+                        Sangm Mediserve Pvt.Ltd
+                    </h3>
+                    <blockquote class="text-left" style="padding-bottom: 2em;">
+                        The shop is commited to deliver solutions for regulated Bio medical waste management and compliance programs as well as waste recycling.
+                    </blockquote>
+                </div>
+            </div>
+            <div class="col-md-4 text-center">
+                <div class="profile">
+                    <img src="assets/300299465_1171212470103974_8294778186559357847_n.jpeg" class="user" alt="">
+                    <h3 class="text-center">
+                        Aruna Green Ventures <br>
+                    </h3>
+                    <blockquote class="text-center" style="padding-bottom: 3.8em;">
+                        It deals with solid waste management, bio gas plant management, organic waste converter manufacturer.
+                    </blockquote>
+                </div>
+            </div>
+            <div class="col-md-4 text-center">
+                <div class="profile">
+                    <img src="assets/300443787_2059021764285964_4643277898355268782_n.jpeg" class="user" alt="">
+                    <h3 class="text-center">
+                        Dispose Iterms <br>
+                    </h3>
+                    <blockquote class="text-right">
+                        They are known to satisfactoraily cater to demands of it's customer's base. It ensures a positive customer experience by leading B2B market place and making available goods and services of top notch quality.
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--------------footer----------------->
+
+    <footer class="page-footer bg-dark">
+        <div class="">
+            <div class="container">
+                <div class="row py-4 d-flex align-items-center">
+                    <div class="col-md-12 text-center">
+                        <a href="#"><i class="fab fa-facebook-f text-white mr-4"></i></a>
+                        <a href="#"><i class="fab fa-twitter text-white mr-4"></i></a>
+                        <a href="#"><i class="fab fa-google-plus-g text-white mr-4"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in text-white mr-4"></i></a>
+                        <a href="#"><i class="fab fa-instagram text-white mr-4"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container text-center text-white text-md-left mt-5">
+            <div class="row">
+                <div class="col-md-5 mx-auto mb-4">
+                    <h4 class="text-uppercase font-weight-bold">PRASADAM</h4>
+                    <p class="mt-2">Prasadam is a bridge which fills the gap between management of organic waste and proper organisation of waste generated by various organisation.</span></p>
+                </div>
+                <div class="col-md-2 mx-auto mb-4">
+                    <h6 class="text-uppercase font-weight-bold">Links</h6>
+
+                    <ul class="list-unstyled">
+                        <li class="my-2 link"><a href="whatWeDo.htm">What we do</a></li>
+                        <li class="my-2 link"><a href="whoWeAre.htm">Who we are</a></li>
+                        <li class="my-2 link"><a href="gallery.htm">Galery</a></li>
+                        <li class="my-2 link"><a href="contactUs.htm">Contact us</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 mx-auto mb-4">
+                    <h6 class="text-uppercase font-weight-bold">Links</h6>
+
+                    <ul class="list-unstyled">
+                        <li class="my-2"><i class="fas fa-home mr-3"></i>Prayagraj, near Kotha Parcha</li>
+                        <li class="my-2"><i class="fas fa-envelope mr-3"></i>Prasadam.to.all@gmail.com</li>
+                        <li class="my-2"><i class="fas fa-phone mr-3"></i>+917868542347</li>
+                        <li class="my-2"><i class="fas fa-print mr-3"></i>+0022456789</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright text-center text-white py-3">
+            <p>&copy; Copyright</p>
+            <a class="link" href="#">Prasadam.to.all@gmail.com</a>
+            <p>Designed by TECHNOVATORS</p>
+        </div>
+    </footer> 
+
+    <!--------------js scripts------------->    
+
+    <script type="text/javascript" src="node_modules/mdbootstrap/js/jquery.min.js"></script>
+    <script type="text/javascript" src="node_modules/mdbootstrap/js/popper.min.js"></script>
+    <script type="text/javascript" src="node_modules/mdbootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="node_modules/mdbootstrap/js/mdb.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.6/dist/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.2.1/dist/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+    <!--------------animation scripts------->
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+    <!--------------modal scripts---------->
+
+    <script>
+        // Example starter JavaScript for disabling form submissions if there are invalid fields
+        (function() {
+          'use strict';
+          window.addEventListener('load', function() {
+            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+            var forms = document.getElementsByClassName('needs-validation');
+            // Loop over them and prevent submission
+            var validation = Array.prototype.filter.call(forms, function(form) {
+              form.addEventListener('submit', function(event) {
+                if (form.checkValidity() === false) {
+                  event.preventDefault();
+                  event.stopPropagation();
+                }
+                form.classList.add('was-validated');
+              }, false);
+            });
+          }, false);
+        })();
+    </script>
+    
+</body>
+</html>

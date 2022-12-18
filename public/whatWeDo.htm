@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What We Do</title>
+    <link rel="stylesheet" href="whatWeDo.css">
+    <link rel="icon" href="assets/LOGO PRASADAM FINAL.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.2.1/dist/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+    <link rel="stylesheet" href="node_modules/mdbootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/mdbootstrap/css/mdb.min.css">
+    <link rel="stylesheet" href="node_modules/mdbootstrap/css/style.css">
+    <script src="https://kit.fontawesome.com/658aa27f14.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+
+    <!----------header--------------------->
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #342f2d;">
+
+            <button class=" my-auto navbar-toggler" type="button" data-toggle="collapse"
+                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="mx-auto navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item p-3">
+                        <a class="nav-link text-white" href="whoWeAre.htm">Who we are</a>
+                    </li>
+                    <li class="nav-item p-3">
+                        <a class="nav-link text-white" href="whatWeDo.htm">What we do</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="navbar-brand" href="index.htm">
+                            <img id="img" src="assets/LOGO PRASADAM FINAL.png" alt="">
+                        </a>
+                    </li>
+                    <li class="nav-item p-3">
+                        <a class="nav-link text-white" href="gallery.htm">Gallery</a>
+                    </li>
+                    <li class="nav-item p-3">
+                        <a class="nav-link text-white" href="contactUs.htm">Contact us</a>
+                    </li>
+                </ul>
+                <a class="btn" data-toggle="modal" data-target="#loginModal" href="#" id="button">LOGIN</a>
+            </div>
+        </nav>
+
+        <!----------login pop-up--------------------->
+
+        <section class="login-pop-up">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="modal fade" id="loginModal">
+                            <div class="modal-dialog modal-sm">
+                                <div class="modal-content">
+                                    <div class="modal-body">
+                                        <a class="btn text-light btn-lg btn-block" style="color: black;" data-toggle="modal" data-target="#donorModal" href="#" id="button">DONOR</a>
+                                        <a class="btn text-light btn-lg btn-block" style="color: black;" data-toggle="modal" data-target="#acceptorModal" id="button">ACCEPTOR</a>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <input type="button" class="btn btn-default" data-dismiss="modal" value="Close">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!----------donor pop-up--------------------->
+
+        <section class="donor-pop-up">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="modal fade" id="donorModal">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+                                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                                <ul class="navbar-nav mx-auto">
+                                                    <li class="nav-item p-3">
+                                                        <a class="navbar-brand" href="#">
+                                                            <img id="img" src="assets/LOGO PRASADAM FINAL.png" alt="">
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </nav>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form class="needs-validation my-5 py-5" novalidate>
+                                            <div class="form-col">
+                                                <div class="form-group">
+                                                    <label for="validationCustom01">First name :</label>
+                                                    <input type="text" class="form-control" id="validationCustom01" placeholder="First name" required>
+                                                    <div class="valid-feedback">
+                                                        Looks good!
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="validationCustom02">Last name :</label>
+                                                    <input type="text" class="form-control" id="validationCustom02" placeholder="Last name">
+                                                    <div class="valid-feedback">
+                                                        Looks good!
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="validationCustomEmail">Email :</label>
+                                                    <input type="email" class="form-control" id="validationCustomEmail" placeholder="Email" required>
+                                                    <div class="invalid-feedback">
+                                                        Please provide a valid e-mail.
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="validationCustomNumber">Contact Number :</label>
+                                                    <input type="tel" class="form-control" id="validationCustomNumber" placeholder="Contact Number" required>
+                                                    <div class="invalid-feedback">
+                                                        Please provide a valid contact details.
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="validationCustom03">City :</label>
+                                                    <input type="text" class="form-control" id="validationCustom03" placeholder="City" required>
+                                                    <div class="invalid-feedback">
+                                                      Please provide a valid city.
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="validationCustom04">State :</label>
+                                                    <input type="text" class="form-control" id="validationCustom04" placeholder="State" required>
+                                                    <div class="invalid-feedback">
+                                                        Please provide a valid state.
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="validationCustom05">Zip :</label>
+                                                    <input type="text" class="form-control" id="validationCustom05" placeholder="Zip" required>
+                                                    <div class="invalid-feedback">
+                                                        Please provide a valid zip.
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                                                        <label class="form-check-label" for="invalidCheck">
+                                                            Agree to terms and conditions
+                                                        </label>
+                                                        <div class="invalid-feedback">
+                                                            You must agree before submitting.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <button class="btn btn-primary" type="submit">Submit</button>
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer bg-dark">
+                                        <footer class="container text-center text-md-left mt-5">
+                                            <div class="footer-copyright text-center py-3">
+                                                <p>&copy; Copyright</p>
+                                                <a href="#">Prasadam@gmail.com</a>
+                                                <p>Designed by TECHNOVATORS</p>
+                                            </div>
+                                        </footer>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!----------acceptor pop-up-------------->
+
+        <section class="acceptor-pop-up">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="modal fade" id="acceptorModal">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+                                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                                <ul class="navbar-nav mx-auto">
+                                                    <li class="nav-item p-3">
+                                                        <a class="navbar-brand" href="#">
+                                                            <img id="img" src="assets/LOGO PRASADAM FINAL.png" alt="">
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </nav>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form class="needs-validation my-5 py-5" novalidate>
+                                            <div class="form-col">
+                                                <div class="form-group">
+                                                    <label for="validationCustom01">First name :</label>
+                                                    <input type="text" class="form-control" id="validationCustom01" placeholder="First name" required>
+                                                    <div class="valid-feedback">
+                                                        Looks good!
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="validationCustom02">Last name :</label>
+                                                    <input type="text" class="form-control" id="validationCustom02" placeholder="Last name">
+                                                    <div class="valid-feedback">
+                                                        Looks good!
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="validationCustomEmail">Email :</label>
+                                                    <input type="email" class="form-control" id="validationCustomEmail" placeholder="Email" required>
+                                                    <div class="invalid-feedback">
+                                                        Please provide a valid e-mail.
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="validationCustomNumber">Contact Number :</label>
+                                                    <input type="tel" class="form-control" id="validationCustomNumber" placeholder="Contact Number" required>
+                                                    <div class="invalid-feedback">
+                                                        Please provide a valid contact details.
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="validationCustom03">City :</label>
+                                                    <input type="text" class="form-control" id="validationCustom03" placeholder="City" required>
+                                                    <div class="invalid-feedback">
+                                                      Please provide a valid city.
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                                                        <label class="form-check-label" for="invalidCheck">
+                                                            Agree to terms and conditions
+                                                        </label>
+                                                        <div class="invalid-feedback">
+                                                            You must agree before submitting.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <button class="btn btn-primary" type="submit">Submit</button>
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer bg-dark">
+                                        <footer class="container text-center text-md-left mt-5">
+                                            <div class="footer-copyright text-center py-3">
+                                                <p>&copy; Copyright</p>
+                                                <a href="#">Prasadam@gmail.com</a>
+                                                <p>Designed by TECHNOVATORS</p>
+                                            </div>
+                                        </footer>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+
+    <!--------------bridge----------------->
+
+    <div class="bridge my-5 py-5">
+        <div class="hero my-5">
+            <h1 data-aos="fade-down" data-aos-offset="200" data-aos-duration="800"
+            data-aos-easing="ease-in-out">We &nbsp;are &nbsp;the &nbsp;bridge &nbsp;that &nbsp;connects!</h1>
+        </div>
+        <img src="assets/new bg bridge.png" alt="">
+    </div>
+
+    <!------------jumbotron---------------->
+
+    <section class="jump my-1 py-2">
+        <div class="jumbotron jumbotron-fluid">
+            <div class="row container my-auto mx-auto" >
+                <div class="img p-2 col-lg-6 col-md-12 col-12 my-auto" id="con-img">
+                    <img src="assets/help dodnate.jpg" alt="" data-aos="fade-right" data-aos-offset="200" data-aos-duration="800"
+                    data-aos-easing="ease-in-out">
+                </div>
+                <div class="text p-3 col-lg-6 col-md-12 col-12 w-50">
+                    <h1 class="display-4" data-aos="fade-down" data-aos-offset="200" data-aos-duration="800"
+                    data-aos-easing="ease-in-out">Prasadam for Industry</h1>
+                    <p class="lead" data-aos="fade-left" data-aos-offset="200"
+                    data-aos-duration="800" data-aos-easing="ease-in-out">We at prasadam act as bridge to manage the organic waste and optimal utilisation of organic waste so that the waste can be converted into useful by-product.</p>
+                </div>
+            </div>
+        </div>
+        <div class="jumbotron jumbotron-fluid">
+            <div class="row container my-auto mx-auto">
+                <div class="text p-3 col-lg-6 col-md-12 col-12 w-50">
+                    <h1 class="display-4" data-aos="fade-down" data-aos-offset="200" data-aos-duration="800"
+                    data-aos-easing="ease-in-out">Prasadam for Society</h1>
+                    <p class="lead" data-aos="fade-right" data-aos-offset="200" data-aos-duration="800"
+                    data-aos-easing="ease-in-out">We at prasadam act as bridge to manage the proper deliver of edible meal to required organizations and if not edible then properly dumped or sent to various industry.</p>
+                </div>
+                <div class="img p-2 col-lg-6 col-md-12 col-12 my-auto" id="con-img">
+                    <img src="assets/people help.jpg" alt="" data-aos="fade-left" data-aos-offset="200"
+                    data-aos-duration="800" data-aos-easing="ease-in-out">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--------------footer----------------->
+
+    <footer class="page-footer bg-dark">
+        <div class="">
+            <div class="container">
+                <div class="row py-4 d-flex align-items-center">
+                    <div class="col-md-12 text-center">
+                        <a href="#"><i class="fab fa-facebook-f text-white mr-4"></i></a>
+                        <a href="#"><i class="fab fa-twitter text-white mr-4"></i></a>
+                        <a href="#"><i class="fab fa-google-plus-g text-white mr-4"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in text-white mr-4"></i></a>
+                        <a href="#"><i class="fab fa-instagram text-white mr-4"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container text-center text-white text-md-left mt-5">
+            <div class="row">
+                <div class="col-md-5 mx-auto mb-4">
+                    <h4 class="text-uppercase font-weight-bold">PRASADAM</h4>
+                    <!-- <hr class="bg-success mb-4 mt-0 d-inline-block mx-auto" style="width: 125px; height: 2px;"> -->
+                    <p class="mt-2">Prasadam is a bridge which fills the gap between management of organic waste and proper organisation of waste generated by various organisation.</p>
+                </div>
+                <div class="col-md-2 mx-auto mb-4">
+                    <h6 class="text-uppercase font-weight-bold">Links</h6>
+                    <!-- <hr class="bg-success mb-4 mt-0 d-inline-block mx-auto" style="width: 110px; height: 2px;"> -->
+
+                    <ul class="list-unstyled">
+                        <li class="my-2 link"><a href="whatWeDo.htm">What we do</a></li>
+                        <li class="my-2 link"><a href="whoWeAre.htm">Who we are</a></li>
+                        <li class="my-2 link"><a href="gallery.htm">Galery</a></li>
+                        <li class="my-2 link"><a href="contactUs.htm">Contact us</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 mx-auto mb-4">
+                    <h6 class="text-uppercase font-weight-bold">Links</h6>
+                    <!-- <hr class="bg-success mb-4 mt-0 d-inline-block mx-auto" style="width: 110px; height: 2px;"> -->
+
+                    <ul class="list-unstyled">
+                        <li class="my-2"><i class="fas fa-home mr-3"></i>Prayagraj, near Kotha Parcha</li>
+                        <li class="my-2"><i class="fas fa-envelope mr-3"></i>Prasadam.to.all@gmail.com</li>
+                        <li class="my-2"><i class="fas fa-phone mr-3"></i>+917868542347</li>
+                        <li class="my-2"><i class="fas fa-print mr-3"></i>+0022456789</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright text-center text-white py-3">
+            <p>&copy; Copyright</p>
+            <a class="link" href="#">Prasadam.to.all@gmail.com</a>
+            <p>Designed by TECHNOVATORS</p>
+        </div>
+    </footer> 
+
+    <!--------------js scripts------------->    
+
+    <script type="text/javascript" src="node_modules/mdbootstrap/js/jquery.min.js"></script>
+    <script type="text/javascript" src="node_modules/mdbootstrap/js/popper.min.js"></script>
+    <script type="text/javascript" src="node_modules/mdbootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="node_modules/mdbootstrap/js/mdb.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.6/dist/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.2.1/dist/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+    <!--------------animation scripts------->
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    
+</body>
+</html>
